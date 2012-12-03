@@ -5,7 +5,8 @@ Gem::Specification.new do |s|
   s.summary     = 'Sharing same application settings between ruby and javascript'
   s.authors     = ['Kevin Disneur']
   s.email       = 'kevin.disneur@gmail.com'
-  s.files       = ['lib/settings_js.rb']
+  s.files       = `git ls-files`.split(/\n/)
+  s.test_files  = `git ls-files -- spec/*`.split(/\n/)
   s.homepage    = 'http://rubygems.org/gems/settings_js'
 
   s.add_dependency 'active_support'
