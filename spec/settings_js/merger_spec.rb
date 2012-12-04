@@ -28,14 +28,14 @@ describe SettingsJs::Merger do
     end
 
     it 'returns a hash which merge all keys hash response' do
-      adapter = mock(:adapter)
-      adapter.stub(:to_hash).and_return({ key1: 'value1', key2: 'value2' }, { key2: { key2_1: 'value2_1', key2_2: 'value2_2' }})
+      backend = mock(:backend)
+      backend.stub(:to_hash).and_return({ key1: 'value1', key2: 'value2' }, { key2: { key2_1: 'value2_1', key2_2: 'value2_2' }})
 
       config = mock(:config)
       config.stub(:keys).and_return(%w(key1 key2))
 
       merger.stub(:config).and_return(config)
-      merger.stub(:adapter).and_return(adapter)
+      merger.stub(:backend).and_return(backend)
 
       expected_hash = {
         key1: 'value1',

@@ -4,7 +4,7 @@ module SettingsJs
   class Config
     include ::Singleton
 
-    attr_accessor :adapter,
+    attr_accessor :backend,
                   :keys,
                   :klass
 

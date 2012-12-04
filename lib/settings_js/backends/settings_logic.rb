@@ -1,5 +1,5 @@
 module SettingsJs
-  module Adapters
+  module Backends
     class SettingsLogic
 
       attr_accessor :klass

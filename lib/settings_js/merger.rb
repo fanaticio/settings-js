@@ -9,7 +9,7 @@ module SettingsJs
         raise TypeError.new('the configuration key "keys" must be reduceable')
       end
 
-      config.keys.reduce({}) { |hash, base_key| hash.merge(adapter.to_hash(base_key)) }
+      config.keys.reduce({}) { |hash, base_key| hash.merge(backend.to_hash(base_key)) }
     end
 
     def to_json
@@ -22,11 +22,11 @@ module SettingsJs
       SettingsJs::Config.instance
     end
 
-    def adapter
-      adapter_proxy_path = "settings_js/adapters/#{config.adapter}"
+    def backend
+      backend_proxy_path = "settings_js/backends/#{config.backend}"
 
-      require adapter_proxy_path
-      adapter_proxy_path.classify.constantize.new(config.klass)
+      require backend_proxy_path
+      backend_proxy_path.classify.constantize.new(config.klass)
     end
   end
 end

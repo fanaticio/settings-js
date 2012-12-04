@@ -8,7 +8,7 @@ require 'sprockets'
 module Jasmine
 
   class DummySettings < Settingslogic
-    source File.join(Spec_root, 'fixtures', 'settings_js', 'adapters', 'settings_logic.yml')
+    source File.join(Spec_root, 'fixtures', 'settings_js', 'backends', 'settings_logic.yml')
   end
 
 
@@ -28,7 +28,7 @@ module Jasmine
 
     def gem_configuration
       SettingsJs.configuration do |config|
-        config.adapter = 'settings_logic'
+        config.backend = 'settings_logic'
         config.keys    = %w(key1 key2.sub_key2_2)
         config.klass   = DummySettings
       end
