@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     settings_js (0.0.1)
-      active_support
-      json
+      active_support (> 1.0)
+      json (> 0)
       sprockets
 
 GEM
