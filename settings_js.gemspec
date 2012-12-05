@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.test_files  = `git ls-files -- spec/*`.split(/\n/)
   s.homepage    = 'http://rubygems.org/gems/settings_js'
 
-  s.add_dependency 'active_support', '> 1.0'
-  s.add_dependency 'json',           '> 0'
+  s.add_dependency 'activesupport', '> 0'
+  s.add_dependency 'json',          '> 0'
   s.add_dependency 'sprockets'
 
   s.add_development_dependency 'jasmine'
