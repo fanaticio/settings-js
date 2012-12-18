@@ -1,8 +1,8 @@
 # Welcome to Settings-js
 
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/kdisneur/settings-js)
-[![Travis CI](https://secure.travis-ci.org/kdisneur/settings-js.png)](http://travis-ci.org/kdisneur/settings-js)
-[![Dependency Status](https://gemnasium.com/kdisneur/settings-js.png)](https://gemnasium.com/kdisneur/settings-js)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/fanaticio/settings-js)
+[![Travis CI](https://secure.travis-ci.org/fanaticio/settings-js.png)](http://travis-ci.org/fanaticio/settings-js)
+[![Dependency Status](https://gemnasium.com/fanaticio/settings-js.png)](https://gemnasium.com/fanaticio/settings-js)
 
 Use application specific settings with Javascript.
 
