@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 Spec_root = File.expand_path('..', __FILE__)
 
 require File.join(Spec_root, '..', 'lib', 'settings_js')
