@@ -16,14 +16,16 @@ describe 'SettingsJs::Backends::SettingsLogic' do
 
   describe '#to_hash' do
     it 'returns subkeys when base key is in settings root' do
-      backend_instance.to_hash('key1').should == { 'sub_key1' => 'sub_value1' }
+      backend_instance.to_hash('key1').should == { 'key1' => { 'sub_key1' => 'sub_value1' }}
     end
 
     it 'returns subkeys when base key is under the settings root' do
       expected_hash = {
-        'sub_key2_2_1' => 'sub_value2_2_1' ,
-        'sub_key2_2_2' => {
-          'sub_key2_2_2_1' => 'sub_value2_2_2_1'
+        'sub_key2_2' => {
+          'sub_key2_2_1' => 'sub_value2_2_1' ,
+          'sub_key2_2_2' => {
+            'sub_key2_2_2_1' => 'sub_value2_2_2_1'
+          }
         }
       }
 

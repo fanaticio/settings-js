@@ -24,18 +24,18 @@ module SettingsJs
       # Examples
       #
       #   Settingsjs::Backends::SettingsLogic.new(MySettings).to_hash('key1.subkey1_1')
-      #   # => 'Awesome value!'
+      #   # => { subkey1_1: 'Awesome value!' }
       #
       # Returns the Hash value.
       def to_hash(base_key)
         keys      = base_key.split(/\./)
+        hash_key  = keys.last
         base_hash = klass.send(keys.shift)
 
         keys.each { |key| base_hash = base_hash.send(key) }
 
-        base_hash
+        { hash_key => base_hash }
       end
-
     end
   end
 end
