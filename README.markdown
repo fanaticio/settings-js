@@ -37,7 +37,7 @@ Load the Javascript file and access the `Settings` class:
 ```javascript
 // = require settings-js/settings
 
-Settings.host_name
+Settings.hosts,host_name
 # => 'http://localhost:8080'
 ```
 
