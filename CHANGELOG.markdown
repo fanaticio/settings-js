@@ -1,4 +1,4 @@
-# 0.2.0 (no backward)
+# 0.3.0 (no backward)
 
 * Use base key as settings key
 
@@ -15,6 +15,10 @@ console.log(Settings);
 console.log(Settings);
 # => { maps: { defaults: { latitude: 42.00, longitude: 41.00 }}}
 ```
+
+# 0.2.0
+
+* Make it a Rails engine
 
 # 0.1.2
 

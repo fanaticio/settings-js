@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'settings_js'
-  s.version     = '0.2.0'
-  s.date        = '2013-02-13'
+  s.version     = '0.3.0'
+  s.date        = '2013-10-14'
   s.summary     = 'Sharing same application settings between ruby and javascript'
   s.authors     = ['Kevin Disneur']
   s.email       = 'kevin.disneur@gmail.com'
